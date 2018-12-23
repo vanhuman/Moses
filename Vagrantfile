@@ -12,6 +12,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
+  config.vm.define "media_manager"
   config.vm.box = "ubuntu/xenial64"
 
   # Disable automatic box update checking. If you disable this, then
@@ -45,6 +46,7 @@ Vagrant.configure("2") do |config|
   # argument is a set of non-required options.
   config.vm.synced_folder "media-manager/", "/var/www/html/media-manager", id: "MediaManager"
   config.vm.synced_folder "api/", "/var/www/html/api", id: "API"
+  config.vm.synced_folder "startUp/", "/var/www/html/startUp", id: "startUp"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.

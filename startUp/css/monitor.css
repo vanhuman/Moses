@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31-jul-2015, 15:37:37
+    Author     : Harm
+*/
+
+body {
+    background-color: #fff;
+    color: black;
+    font-family: Arial, serif;
+}
+
+div.string .content {
+    color : blue;
+}
+
+div.boolean .content {
+    color : orange;
+}
+
+div.null .content {
+    font-weight: bold;
+}
+
+div.tags {
+    font-style: italic;
+}
+
+div.second>div, div.second>button  {
+    margin-bottom: 20px;
+}
+
+div.second>button {
+    display: block;
+}
+
+div.object {
+    border: whitesmoke solid 1px;
+    padding: 5px;
+}
+
+dl.array {
+    border: whitesmoke dashed 1px; 
+    padding: 5px;
+}
+
+dt, dd {
+    float: left;
+}
+
+dt {
+    clear: left;
+}
+
+dl {
+    overflow: hidden;
+}
+
+#controls {
+    position: fixed;
+    background-color: #fff;
+}
+
+#load_all_data_button.loading {
+    background-color: red;
+}
+
+#feedback {
+    padding-top: 40px;
+}
+
+.pid-container {
+    margin-top: 50px;
+    border-top: 1px solid darkgrey;
+}
+
+
+
