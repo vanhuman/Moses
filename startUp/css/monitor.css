@@ -22,6 +22,10 @@ div.boolean .content {
     color : orange;
 }
 
+div.number .content {
+    color : green;
+}
+
 div.null .content {
     font-weight: bold;
 }
@@ -39,12 +43,12 @@ div.second>button {
 }
 
 div.object {
-    border: whitesmoke solid 1px;
+    border: black solid 1px;
     padding: 5px;
 }
 
 dl.array {
-    border: whitesmoke dashed 1px; 
+    border: black dashed 1px;
     padding: 5px;
 }
 

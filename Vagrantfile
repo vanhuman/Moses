@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.define "media_manager"
+  config.vm.define "music_catalog"
   config.vm.box = "ubuntu/xenial64"
 
   # Disable automatic box update checking. If you disable this, then
@@ -44,8 +44,8 @@ Vagrant.configure("2") do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  config.vm.synced_folder "media-manager/", "/var/www/html/media-manager", id: "MediaManager"
-  config.vm.synced_folder "api/", "/var/www/html/api", id: "API"
+  config.vm.synced_folder "music-catalog/", "/var/www/html/music-catalog", id: "MusicCatalog"
+  config.vm.synced_folder "music-catalog-api/", "/var/www/html/music-catalog-api", id: "MusicCatalogApi"
   config.vm.synced_folder "startUp/", "/var/www/html/startUp", id: "startUp"
 
   # Provider-specific configuration so you can fine-tune various

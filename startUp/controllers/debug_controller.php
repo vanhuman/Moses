@@ -7,7 +7,7 @@ class Debug_controller
 	/** @var \Harm\Show */
 	private $show = null;
 	private $output_type = 'html';
-	private $output_depth = 3;
+	private $output_depth = 5;
 	private $output_buffer;
 	private $max_string_length = 100;
 	private static $backlog = array();
